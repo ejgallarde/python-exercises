@@ -1,2 +1,2 @@
-# python-bootcamp
-Training materials that can be used for Python Training
+# python-exercises
+Exercises in python
