@@ -9,12 +9,15 @@
 """
 
 import sys
-import showcard #assume showcard module is available
+
+# Assume showcard module is available
+import showcard
 
 number = input("Enter a number from 1-52: ")
 filename = "BMP" + number + ".GIF"
 
 showcard.display_file(filename)
+showcard.set_timeout(10)
 
 
 sys.exit(0)
