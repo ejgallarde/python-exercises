@@ -1,0 +1,14 @@
+Exercise Questions:
+    1. Which version of Python is being used?
+    A: In the command line, type python (Windows) or python -v (Linux)
+
+    2. Using an editor, create a new script called exl.py. Within this script, create two variables,
+    one containing your first name and another containing your last name. Display them using
+    print with a space between each one.
+
+    Run the script:
+        a) From a command-line
+        b) From PyCharm
+
+    3. Write a Python program called pickacard.py which uses the Showcard module to display
+    a single card.
