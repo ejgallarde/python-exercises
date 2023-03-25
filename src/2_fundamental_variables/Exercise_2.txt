@@ -32,19 +32,17 @@ Exercise 2 - Fundamental Variables
 
     b) The number of characters in var (this does not require a method).
     c) Does it contain numeric characters? (try the isdecimal() method).
-    QA Python 3 Programming | QARPYTH3 v2.4
+
 
     If time allows...
 
     3. The height of a projectile (v) from a gun (ignoring air resistance) is given as:
 
-    gx?
-    Y=Yo+xtan@-
-    2(vo cos 6F
+    Y = Yo + x tan@ - [gx^2 / 2(Vo cos@)^2 ]
 
     where:
 
-    g Acceleration due to gravity: 9.81 m/s squared
+    g Acceleration due to gravity: -9.81 m/s squared
     Vo :theinitial velocity m/s
 
     0 (theta) elevation angle in radians
@@ -64,9 +62,9 @@ Exercise 2 - Fundamental Variables
     You will need to import some math methods:
     fromm math import pi, tan, cos
 
-    There will be a further if time allows question which expands on this code after the
+    There will be a further "if-time-allows" question which expands on this code after the
     Collections chapter.
-    QA Python 3 Programming | QARPYTH3 v2.4
+
 
     4. Create a new program called Fl.py, it will explore some of the mathematics
     involved in managing a Formula 1 racing car.
@@ -81,7 +79,7 @@ Exercise 2 - Fundamental Variables
     extra fuel load, and then we're going to calculate the lap time based on the
     weight of fuel, which naturally decreases each lap.
 
-    a. Inthe previous exercise, we worked out the minimum fuel requirement for a
+    a. In the previous exercise, we worked out the minimum fuel requirement for a
     45-lap race and stored this in a variable named fuel_requirement. To fill the
     tank with the absolute minimum amount of fuel would be foolhardy, and not
     allow the drivers any margin for manoeuvre. Typically, a car will carry an extra
