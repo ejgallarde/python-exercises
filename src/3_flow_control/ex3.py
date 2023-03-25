@@ -7,3 +7,17 @@
 """
     Template for globbing exercise
 """
+import sys
+import glob
+import os
+
+# Get the directory name
+if sys.platform == 'win32':
+    hdir = os.environ['HOMEPATH']
+else:
+    hdir = os.environ['HOME']
+
+# Construct a portable wildcard pattern
+pattern = os.path.join(hdir, '*')
+
+sys.exit(0)
