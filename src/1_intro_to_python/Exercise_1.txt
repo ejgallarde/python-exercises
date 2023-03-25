@@ -31,7 +31,7 @@ Exercise 1 - Introduction to Python
 
     Don't worry about out-of-range numbers for the time being.
 
-If time allows...
+    If time allows...
 
     4. The card display currently times out after five seconds. You may wish to adjust
     this by calling showcard.set_timeout(number_of_seconds).

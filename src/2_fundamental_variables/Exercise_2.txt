@@ -1,0 +1,100 @@
+Exercise 2 - Fundamental Variables
+
+ Objective:
+ To experiment with some of the basic variable types within Python and some of their operations.
+
+ Questions:
+
+    1. This exercise carries out some basic operations on variables.
+    a) Create a new script called ex2.py
+
+    b) Create two variables, one containing your first name and another
+    containing your last name. Display them using print.
+
+    c) Now transfer these variable values into a list and display the list,
+
+    d) Take the variables and now store the values in a dictionary, using keys ‘first’
+    and "last". Display the dictionary values.
+
+    ..and execute the script ex2.py.
+
+    2. Now we'll try some object methods. Create a Python script (call it ex2_2.py if
+    you like) with the following line:
+
+    var = input("Please enter a value: ")
+
+    This is an easy way of outputting a prompt to the console and getting a reply.
+    The variable var is a reference to that reply, which is a string.
+
+    Now print the following:
+
+    a) The value of var as upper case.
+
+    b) The number of characters in var (this does not require a method).
+    c) Does it contain numeric characters? (try the isdecimal() method).
+    QA Python 3 Programming | QARPYTH3 v2.4
+
+    If time allows...
+
+    3. The height of a projectile (v) from a gun (ignoring air resistance) is given as:
+
+    gx?
+    Y=Yo+xtan@-
+    2(vo cos 6F
+
+    where:
+
+    g Acceleration due to gravity: 9.81 m/s squared
+    Vo :theinitial velocity m/s
+
+    0 (theta) elevation angle in radians
+
+    X :the horizontal distance travelled
+
+    Yo height of the barrel (m)
+
+    Write a Python program to answer the following question:
+
+    At a barrel height of Im, after a horizontal distance of 0.5m, an elevation of 80
+    degrees, and an initial velocity of 44 m/s, what is the height of the projectile?
+
+    To convert degrees (deg) to radians use:
+    theta = deg * (pi/180)
+
+    You will need to import some math methods:
+    fromm math import pi, tan, cos
+
+    There will be a further if time allows question which expands on this code after the
+    Collections chapter.
+    QA Python 3 Programming | QARPYTH3 v2.4
+
+    4. Create a new program called Fl.py, it will explore some of the mathematics
+    involved in managing a Formula 1 racing car.
+
+    The task of this program (at first), is to answer a question:
+    Q. "During a race of 45 laps, what is the minimum fuel requirement?"
+
+    You will need to know the fuel consumption found during the race qualifying,
+    which is 2.25 kg for each lap.
+
+    5. In this exercise, we'll make a few more modifications to Fl.py. First, we'll add an
+    extra fuel load, and then we're going to calculate the lap time based on the
+    weight of fuel, which naturally decreases each lap.
+
+    a. Inthe previous exercise, we worked out the minimum fuel requirement for a
+    45-lap race and stored this in a variable named fuel_requirement. To fill the
+    tank with the absolute minimum amount of fuel would be foolhardy, and not
+    allow the drivers any margin for manoeuvre. Typically, a car will carry an extra
+    50% for contingency (multiply the minimum by 1.5). So what fuel will be carried
+    by our fictional F1 car at the start of the race?
+
+    Modify your Fl.py program to calculate this.
+
+    b. You might think it odd that fuel is measured in kilograms rather than litres or
+    gallons. This is because the weight of fuel is critical to the way a Formula One
+    car performs.
+
+    The qualifying lap time was 80.45 seconds, but that was with only 5kg of fuel:
+    each 10 kg of fuel increases the lap time by 0.35 seconds.
+
+    What will be the lap time for the first lap with all the required fuel on board?
