@@ -1,0 +1,121 @@
+Exercise 2 - Fundamental Variables
+
+ Objective:
+ To use the flow control structures of Python and to gain familiarity in coding based on indentation!
+ We'll also be using a couple of modules from the Python standard library.
+
+ Questions
+
+    1. Using a for loop, display the files in your home directory, with their size.
+
+    a) Use the skeleton file Ex3.py
+    b) Get the directory name from the environment using os.environ,
+    HOMEPATH on Windows HOME on Linux (we've done that part for you,
+    notice the test of system.platform).
+    c) Construct a portable wildcard pattern using os.path join (we've done
+    that part for you as well).
+    d) Use the glob.glob() function to obtain the list of filenames.
+    e) Use os.path.getsize() to find each file's size.
+    f) Add a test to only display files that are not zero length.
+    g) Use os.path.basename() to remove the leading directory name(s) from
+    each filename before you print it.
+
+    2. Write a Python program that emulates the high-street bank mechanism for
+    checking a PIN. Keep taking input from the keyboard (see below) until itis
+    identical to a password number which is hard-coded by you in the program.
+
+    To output a prompt and read from the keyboard:
+
+    supplied_pin = input("Enter your PIN: ")
+
+    Restrict the number of attempts to three (be sure to use a variable for that, we
+    may wish to change it later), and output a suitable message for success and
+    failure. Be sure to include the number of attempts in the message.
+
+    Optional extension
+
+    Passwords, and PINs, would not normally be displayed (echoed) to the screen for
+    security reasons. So, now we will add the functionality to hide the characters typed.
+    That could be a lot of work, but one of the advantages of using a language like Python
+    is that "there's a module for it".
+
+    You'll need to import a module called getpass, which is part of the standard library.
+
+    Instead of input use getpass.getpass, in the same place in the program, with the same
+    parameters.
+
+    Note you will have to run your program at the Windows or Linux command prompt
+    (and not the Python shell) to test if it works!
+
+    3. Write a Python program to display a range of numbers by steps of -2.
+
+    a) Prompt the user at the keyboard for a positive integer using:
+    var = input ("Please enter an integer: ")
+
+    b) Validate the input (var) to make sure that the user entered an integer
+    using the isdecimal() method. If the user entered an invalid value, output
+    a suitable error message and exit the program.
+
+    c) Use a loop to count down from this integer in steps of 2, displaying each
+    number on the screen until either 1 or 0 is reached. For example, if the
+    integer 16 (validated) is entered, the output would be:
+
+    16
+    14
+    12
+    10
+
+    6
+    4
+    2
+    0
+    And if 7 is entered, the output would be:
+    7
+
+    5
+    3
+    1
+
+    You will need to look-up the range() built-in in the online
+    documentation, pay particular attention to the stop parameter.
+
+    If time allows...
+
+    4. If ayear is exactly divisible by 4 but not by 100, the year is a leap year. There is
+    an exception to this rule. Years exactly divisible by 400 are leap years. The year
+    2000 is a good example.
+
+    Write a program that asks the user for a year and reports either a leap year or
+    not a leap year. (Hint: x % vy is zero if x is exactly divisible by y.) Test with the
+    following data:
+
+    1984 is a leap year 1981 is NOT a leap year
+    1904 is a leap year 1900 is NOT a leap year
+    2000 is a leap year 2010 is NOT a leap year
+
+    Use the following to ask the user for a year:
+    year = int(input('Please enter a year: '))
+
+    5. Examine the code template provided in weekday.py. Complete the program to
+    ask for a date in DD/MM/YYYY format and print out the day of the week for this
+    date.
+
+    There is a formula, called Zeller's Congruence, which calculates the day of the
+    week from a given day, month and year. Zeller's congruence is defined as
+    follows:
+
+    z=(1+d+(m*2)
+    +(3* (m+1)/5)
+    +y + y/4 - y/100 + y/400) % 7
+    where d, m and y are day, month, year and z are an integer (0 = Sun, 6 = Sat).
+    Add the following adjustments before using in the formula:
+
+    If month is 1or 2 and year is a leap year, subtract 2 from day.
+    If month equals 1 or 2 and year is not a leap year, subtract 1 from day.
+    If month is 1or 2, add 12 to month.
+
+    Your program should print out the name of the day (e.g. Monday), eg.
+
+    11/1980 Tuesday 9/8/1982 Monday
+    25/12/1983 Sunday 31/5/1989 Wednesday
+    2/2/1990 Friday 29/2/1992 Saturday
