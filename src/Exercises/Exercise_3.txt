@@ -8,7 +8,7 @@ Exercise 2 - Fundamental Variables
 
     1. Using a for loop, display the files in your home directory, with their size.
 
-    a) Use the skeleton file Ex3.py
+    a) Use the skeleton file globbing_template.py
     b) Get the directory name from the environment using os.environ,
     HOMEPATH on Windows HOME on Linux (we've done that part for you,
     notice the test of system.platform).
@@ -81,12 +81,12 @@ Exercise 2 - Fundamental Variables
 
     If time allows...
 
-    4. If ayear is exactly divisible by 4 but not by 100, the year is a leap year. There is
+    4. If a year is exactly divisible by 4 but not by 100, the year is a leap year. There is
     an exception to this rule. Years exactly divisible by 400 are leap years. The year
     2000 is a good example.
 
     Write a program that asks the user for a year and reports either a leap year or
-    not a leap year. (Hint: x % vy is zero if x is exactly divisible by y.) Test with the
+    not a leap year. (Hint: x % y is zero if x is exactly divisible by y.) Test with the
     following data:
 
     1984 is a leap year 1981 is NOT a leap year
