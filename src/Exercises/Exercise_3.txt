@@ -96,9 +96,8 @@ Exercise 2 - Fundamental Variables
     Use the following to ask the user for a year:
     year = int(input('Please enter a year: '))
 
-    5. Examine the code template provided in weekday.py. Complete the program to
-    ask for a date in DD/MM/YYYY format and print out the day of the week for this
-    date.
+    5. Write a program to ask for a date in DD/MM/YYYY format
+    and print out the day of the week for this date.
 
     There is a formula, called Zeller's Congruence, which calculates the day of the
     week from a given day, month and year. Zeller's congruence is defined as
@@ -108,6 +107,7 @@ Exercise 2 - Fundamental Variables
     +(3* (m+1)/5)
     +y + y/4 - y/100 + y/400) % 7
     where d, m and y are day, month, year and z are an integer (0 = Sun, 6 = Sat).
+
     Add the following adjustments before using in the formula:
 
     If month is 1or 2 and year is a leap year, subtract 2 from day.
@@ -116,6 +116,9 @@ Exercise 2 - Fundamental Variables
 
     Your program should print out the name of the day (e.g. Monday), eg.
 
-    11/1980 Tuesday 9/8/1982 Monday
-    25/12/1983 Sunday 31/5/1989 Wednesday
-    2/2/1990 Friday 29/2/1992 Saturday
+    11/1980 Tuesday
+    9/8/1982 Monday
+    25/12/1983 Sunday
+    31/5/1989 Wednesday
+    2/2/1990 Friday
+    29/2/1992 Saturday
