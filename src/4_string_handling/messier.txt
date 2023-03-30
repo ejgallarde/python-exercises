@@ -1,0 +1,19 @@
+Number CommonName                              ObjectType               Constellation
+M1     Crab Nebula	                           Supernova remnant        Taurus
+M2     -                                       Globular cluster         Aquarius
+AAAAAAAAAAAAAAAAAAAAAAA
+M3     -                                       Globular cluster         Canes Venatici
+M4     Spider Globular                         Globular cluster         Scorpius
+M5     Rose Cluster                            Globular cluster         Serpens
+SDFGHJKLDFGHJKLSDFGHJKLDFGHJKLSDFGHJKLDFGHJK
+M100   Butterfly Cluster                      Open cluster              Scorpius
+*********************************************
+M111   Crab Nebula	                           Supernova remnant        Taurus
+AAAAAAAAAAAAAAAAAAAAAAA
+M112   -                                       Globular cluster         Aquarius
+M113   -                                       Globular cluster         Canes Venatici
+M124   Crucifix Cluster                        Globular cluster         Scorpius
+M125   Surfboard Galaxy                        Globular cluster         Serpens
+SDFGHJKLDFGHJKLSDFGHJKLDFGHJKLSDFGHJKLDFGHJK
+M100   Butterfly Cluster                      Open cluster              Scorpius
+*********************************************

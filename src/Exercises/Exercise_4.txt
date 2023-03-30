@@ -58,75 +58,22 @@ Exercise 4 - String Handling
 
    3. Examine the file messier.txt in the labs directory, which contains details of
    celestial "Messier" objects. It consists of several columns for each object,
-   identified by the '"M' number. The columns are as follows:
+   identified by the 'M' number. The columns are as follows:
 
-        MessierNumber CommonName Objectlype Constellation
+        MessierNumber CommonName ObjectType Constellation
 
    Note that many have no common name. Read the file using a for loop:
 
    for line in open('messier.txt', encoding="latin_I"):
    if not line: break
-    # The text is in the variable named line’
+   # The text is in the variable named line
 
-    Ignore lines that do not start with '‘M'. Print the fields from each line delimited
-    with '|' characters, Where there is no common name, use 'no name’. Ignore any
-    lines not beginning with a Messier number. For example:
+   Ignore lines that do not start with 'M'. Print the fields from each line delimited
+   with '|' characters, Where there is no common name, use 'no name’. Ignore any
+   lines not beginning with a Messier number. For example:
 
         |M1|The Crab Nebula|Supernova remnant|Taurus|
         |M2|no name|CGlobular cluster|Aguarius|
         |M3|no name|Globular cluster|Canes Venatici|
 
     Hint: the header on the file should assist in getting the field positions.
-
-**************** Solutions ****************
-
-Question 2
-There are at least two ways to format the string, both are shown as "Either/or":
-
-
-
-# Format required:
-
-The hex value of the character.
-
-The character name (cname), left justified,
-maximum 12 characters.
-
-A colon separator.
-
-The lowercase Greek character.
-
-The uppercase Greek character.
-
-HHH THF
-
-
-for pos, chr_name in enumerate(greek, start=0x03B1):
-
-try.
-char = chr(pos)
-
-Either:
-print("{O:#x]} {1:<12s}: {2} {3}".
-format(pos, chr_name, char, char.upper()))
-
-or;
-print(f'{pos:ttx} {chr_name:<12s}). (char) {char.upper()}")
-
-except UnicodeEncodeError as err:
-print(chr_name, 'unknown', err)
-
-If time allows...
-
-Question 3
-
-for line in open('messier.txt'):
-if not line: break
-if line.startswith('M'):
-# Slice each field
-mes_num = line[:6].rstrip()
-com_name = line[6:40].rstrip()
-if not com_name: com_name = 'no name’
-obj_type = line[40:64].rstrip()
-print(f'|[mes_num}|{com_namel}|{ob]_type}|[const]|")
-const = line[64:].rstrip()
