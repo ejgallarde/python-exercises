@@ -18,7 +18,7 @@ Exercise 4 - String Handling
    greek.py in IDLE and run it there (use <F5>) — do not use Windows cmd.exe
    because the character set used cannot handle the Greek characters.
 
-   The try and except blocks are examples of exception handling in case itis run
+   The try and except blocks are examples of exception handling in case it is run
    under cmd.exe — we will cover these later in the course.
 
    The script has a list of names for the characters in the Greek alphabet, and it
@@ -28,100 +28,62 @@ Exercise 4 - String Handling
 
     Currently, the output is a bit messy and insipid, like this:
 
-        Alpha: a
-        Beta: b
-GCammay
-Delta: 8
-Epsilon:
-Zeta: {
-Eta:
-QA
+        Alpha: α
+        Beta: β
+        Gamma: γ
+        Delta: δ
+        Epsilon: ε
+        Zeta: ζ
+        Eta: η
 
-If time
+   The task in this question is to replace the existing print function with another
+   (using format) which displays for each character:
 
-3.
+    The hex value of the character (pos)
+    The character name (cname), left justified, maximum 12 characters
+    A colon separator
+    The lowercase Greek character (char)
+    The uppercase Greek character
+    Your output should look something like this:
 
-Python 3 Programming | QARPYTH3 v2.4
-
-The task in this question is to replace the existing print function with another
-(using format) which displays for each character:
-
-The hex value of the character (pos)
-The character name (cname), left justified, maximum 12 characters
-A colon separator
-The lowercase Greek character (char)
-The uppercase Greek character
-Your output should look something like this:
-
-Ox3bl Alpha aA
-Ox3b2 Beta BB
-0x3b3 Camma yl’
-Ox3b4 Delta 8A
-Ox3bs Epsilon :€E
-Ox3b6 Zeta TZ
-Ox3b7 Eta nH
-and so on.
-
-allows...
-
-Examine the file messier.txt in the labs directory, which contains details of
-celestial "Messier" objects. It consists of several columns for each object,
-identified by the '"M' number. The columns are as follows:
-
-MessierNumber CommonName Objectlype Constellation
-Note that many have no common name. Read the file using a for loop:
-
-for line in open('messier.txt', encoding="latin_I"):
-if not line: break
-# The text is in the variable named line’
-
-Ignore lines that do not start with '‘M'. Print the fields from each line delimited
-with '|' characters, Where there is no common name, use 'no name’. Ignore any
-lines not beginning with a Messier number. For example:
-
-IM1|The Crab Nebula|Supernova remnant|Taurus|
-IM2|no name|CGlobular cluster|Aguarius|
-IM3|no name|Globular cluster|Canes Venatici|
+        Ox3bl Alpha Α α
+        Ox3b2 Beta Β β
+        0x3b3 Gamma Γ γ
+        Ox3b4 Delta Δ δ
+        Ox3bs Epsilon Ε ε
+        Ox3b6 Zeta Ζ ζ
+        Ox3b7 Eta Η η
+        and so on.
 
 
-Hint: the header on the file should assist in getting the field positions.
+   3. Examine the file messier.txt in the labs directory, which contains details of
+   celestial "Messier" objects. It consists of several columns for each object,
+   identified by the '"M' number. The columns are as follows:
 
+        MessierNumber CommonName Objectlype Constellation
 
+   Note that many have no common name. Read the file using a for loop:
+
+   for line in open('messier.txt', encoding="latin_I"):
+   if not line: break
+    # The text is in the variable named line’
+
+    Ignore lines that do not start with '‘M'. Print the fields from each line delimited
+    with '|' characters, Where there is no common name, use 'no name’. Ignore any
+    lines not beginning with a Messier number. For example:
+
+        |M1|The Crab Nebula|Supernova remnant|Taurus|
+        |M2|no name|CGlobular cluster|Aguarius|
+        |M3|no name|Globular cluster|Canes Venatici|
+
+    Hint: the header on the file should assist in getting the field positions.
 
 **************** Solutions ****************
 
-Question 1
-
-a) Aline of hyphens the same length as the Belgium string, followed by
-b) the string with the comma separators replaced by colons", followed by
-
-c) the population of Belgium (the second field) plus the population of the capital
-city (the fourth field). Hint: the answer should be 11183818.
-
-If you did this:
-
-print(items[1] + items[3])
-then you would've got string concatenation, and an apparently very large
-number! You need to change each value to an int.
-
-d) Aline of hyphens the same length as the Belgium string.
-
-items = Belgium.split(,)
-
-print(-'* len(Belgium)) # a)
-print(. join(items)) # b)
-print(int(items[l]) + int(items[3])) # c)
-print(-'* len(Belgium)) #d)
-
 Question 2
-
 There are at least two ways to format the string, both are shown as "Either/or":
 
-greek = ['Alpha’, 'Beta', 'Gamma', ‘Delta’, 'Epsilon', Zeta’,
-'Eta’, "Theta', 'lota’, 'Kappa', 'Lambda’, ‘Mu’,
-‘Nu’, 'Xi', "Omicron, 'Pi', ‘Rho’, 'Sigma final’,
-‘Sigma’, 'Tau’, 'Upsilon', 'Phi', ‘Chi’, 'Psi', 'Omega’
-]
+
 
 # Format required:
 
