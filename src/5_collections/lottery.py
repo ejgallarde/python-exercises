@@ -27,6 +27,6 @@ print(my_dict)
 
 lottery_numbers = set()
 while len(lottery_numbers) < 6:
-    lottery_numbers.add(random.randint(1,50))
+    lottery_numbers.add(random.randint(1, 50))
 else:
     print(lottery_numbers)

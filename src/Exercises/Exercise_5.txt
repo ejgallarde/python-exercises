@@ -28,65 +28,46 @@ find out which function to use from the python standard library called random.
 
 4. We need to do some maintenance on a dictionary of machines:
 
-machines = {'userl00": 'yogi',
-‘'userl”: 'booboo’,
-'user2" rupert’,
-'user3' teddy’,
-'user4". ‘care’,
-'users': 'winnie',
-'userg". 'sooty’,
-'user?7'. '‘padders',
-
-21
-QA
-
-Python 3 Programming | QARPYTH3 v2.4
-
-'user8"; 'polar’,
-‘user’; ‘grizzly’,
-'userl10": 'baloo’,
-'userTl: 'bungle’,
-'userl12" 'fozzie',
-'userl3" 'hugagy’,
-'userl4': 'barnaby!,
-'userls” ‘hair’,
-'userle': 'greppy’'
-
-Don't type this in! It should be available for you to edit in Ex5_4.py in the labs
-directory (or your home directory if on Linux).
+machines = {'user100': 'yogi',
+            'user1': 'booboo',
+            'user2': 'rupert',
+            'user3': 'teddy',
+            'user4': 'care',
+            'user5': 'winnie',
+            'user6': 'sooty',
+            'user7': 'padders',
+            'user8': 'polar',
+            'user9': 'grizzly',
+            'user10': 'baloo',
+            'user11': 'bungle',
+            'user12': 'fozzie',
+            'user13': 'hugagy',
+            'user14': 'barnaby',
+            'user15': 'hair',
+            'user16': 'greppy'}
 
 Without altering the initial definition of the dictionary, write code that will
 implement the following changes:
 
-a)
-b)
-
-c)
-
-d)
-
-e)
-
-9)
-
-userl4 no longer has a machine assigned.
+a) userl4 no longer has a machine assigned.
 The name of userl15's machine is changed to ‘cinnamon’.
 
-userl6 is leaving the company and a new user, userl7 will be assigned his
+b)userl6 is leaving the company and a new user, userl7 will be assigned his
 machine.
 
-user4, user5, and user6 are all leaving at the same time, but their machine
+c) user4, user5, and user6 are all leaving at the same time, but their machine
 names are to be stored in a list called unallocated. Hint: pop in a loop.
 
-user8 gets another machine called 'kodiak' in addition to the one they
+d) user8 gets another machine called 'kodiak' in addition to the one they
 already have.
 
-Print a list of users with their machine in any order. Print each user/machine
+e) Print a list of users with their machine in any order. Print each user/machine
 pair on a separate line.
 
-Print a list of unallocated machines, sorted alphabetically.
+f) Print a list of unallocated machines, sorted alphabetically.
 
-5. This exercise will compare various ways of accessing a list. The script Ex5_5.py
+
+5. This exercise will compare various ways of accessing a list. The script words.py
 creates a list called 'words' from a file of the same name. Each item in the list
 contains a single word. The script calls user-written functions to find the position
 of the word 'Zulu' in the list, each function using a different searching technique.
@@ -106,9 +87,8 @@ IMPORTANT: Your statements within the functions should - actually must, have
 consistent indentation (which is four spaces).
 
 
-
 a. Open the script EX5_5.py using a text editor. Look for the comments marked
-#i## TODO, these indicate where you are asked to add code.
+### TODO, these indicate where you are asked to add code.
 
 The first function to complete is brute_force(). In this function, use a
 counting 'for' loop to search sequentially for the word "Zulu'. When found,
