@@ -6,6 +6,7 @@ Objective:
 
 Questions:
 
+Name your file ex5.py for questions 1 and 2.
 1. What's wrong with this? How should 'Oke' be added to the end of the cheese list?
 
     cheese = ['Cheddar', ‘Stilton’, 'Cornish Yarg']
@@ -49,10 +50,10 @@ machines = {'user100': 'yogi',
 Without altering the initial definition of the dictionary, write code that will
 implement the following changes:
 
-a) userl4 no longer has a machine assigned.
-The name of userl15's machine is changed to ‘cinnamon’.
+a) user14 no longer has a machine assigned.
+The name of user15's machine is changed to ‘cinnamon’.
 
-b)userl6 is leaving the company and a new user, userl7 will be assigned his
+b)user16 is leaving the company and a new user, user17 will be assigned his
 machine.
 
 c) user4, user5, and user6 are all leaving at the same time, but their machine
@@ -87,8 +88,7 @@ IMPORTANT: Your statements within the functions should - actually must, have
 consistent indentation (which is four spaces).
 
 
-a. Open the script EX5_5.py using a text editor. Look for the comments marked
-### TODO, these indicate where you are asked to add code.
+a. Open the script EX5_5.py using a text editor. Look for the comments marked TO-DO
 
 The first function to complete is brute_force(). In this function, use a
 counting 'for' loop to search sequentially for the word "Zulu'. When found,
@@ -96,7 +96,7 @@ break out of the loop and return the word's position, plus 1 (which is the line
 number in the file).
 
 Run the script to test it. If you are unsure about the result, uncomment the
-print statement to display the line number returned: it should be 45400.
+print statement to display the line number returned: it should be 466494.
 That applies to most of the other parts to this exercise as well.
 
 b. The next function to complete is rather less code. Recall the index() method
@@ -104,15 +104,8 @@ which may be called on a list. It returns the position of the first item found
 with the given value. Call this in the index() function, returning the position
 plus 1. Test the script, is index() faster than brute force?
 
-c. Just for fun (!) we'll now time the in keyword. We cannot get the line
-number from this, but it will be constructive in our comparisons of search
-methods. Return 1if 'Zulu' is in words, and O if it is not.
-
-d. Here we would like you to create a dictionary called words_dict where the
+c. Here we would like you to create a dictionary called words_dict where the
 keys are the words, with each value being the position in the words list.
-Look for:
-
-#it# TODO: Create a dictionary called words_dict
 
 A simple for loop will suffice for this. Notice that the dictionary creation
 should be after the start_timer() call. Now implement the dictionary()
