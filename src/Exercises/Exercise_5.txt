@@ -75,7 +75,7 @@ of the word 'Zulu' in the list, each function using a different searching techni
 
 Each function is called several times in a loop, and timings are displayed. If you run
 the script right now, it should display zero times - your task is to write the search
-technigue code.
+technique code.
 
 Don't worry about the syntax for functions (def), we'll cover that later in the course,
 but make sure that the global statements are intact.
@@ -88,7 +88,7 @@ IMPORTANT: Your statements within the functions should - actually must, have
 consistent indentation (which is four spaces).
 
 
-a. Open the script EX5_5.py using a text editor. Look for the comments marked TO-DO
+a. Open the script words.py using a text editor. Look for the comments marked TO-DO
 
 The first function to complete is brute_force(). In this function, use a
 counting 'for' loop to search sequentially for the word "Zulu'. When found,
@@ -123,21 +123,15 @@ Try the timing test again but search for a word near the front of the list, for 
 You should see that the search mechanisms are faster but using a dictionary should
 take (more or less) the same time.
 
-If time allows...
-
-Note this exercise should be considered optional. It requires the matplotlib module
-which might not be installed if this course is not running at QA premises.
-
 
 6. This exercise is a development of a previous optional exercise to show the
-trajectory of a projectile, ignoring air resistance. If you did not complete that
-exercise, take the code from 02 Fundamental variables/traj py.
+trajectory of a projectile, ignoring air resistance.
 
 We are going to plot the trajectory of a projectile onto a graph. You will need two
 lists, one called x_axis and one called y_axis.
 
 Write a loop for values of x (horizontal distance travelled) from zero in increments
-of 0.5. Append each value of x to x_axis.
+of 0.1. Append each value of x to x_axis.
 
 Within the loop, calculate a value for y (height of the projectile) for each increment
 of x, and append each value of y to y_axis.
@@ -151,7 +145,7 @@ Here is the code to plot the graph:
 
 import matplotlib.pyplot as pyplot
 
-pyplotylabel('Height m')
+pyplot.ylabel('Height m')
 pyplot.xlabel('Distance m')
 pyplot.plot(x_axis, y_axis)
 pyplot.show()
@@ -195,219 +189,3 @@ time.sleep(2)
 
 Printing the company name and share price is an opportunity to practise your
 format statements!
-
-Solutions
-
-1. What's wrong with this?
-cheese = Cheddar’, 'Stilton', ‘Cornish Yarg']
-cheese += 'Oke'
-If we print the variable cheese we see:
-[Cheddar ‘Stilton’, ‘Cornish Yarg','O', 'k, 'e']
-The string 'Oke' is a sequence and using += on a list has broken it down into its
-constituent parts. It should have been:
-cheese.append('Oke')
-
-2. What's going on here? Can you explain the output?
-
-tup = 'Hello'
-print(len(tup))
-Prints 5
-
-That should be no surprise, 5 is the number of characters in 'Hello'.
-
-tup = 'Hello',
-print(len(tup))
-Prints 1
-
-This is rather more surprising, but did you notice the trailing comma? That extra
-comma meant that we created a tuple. The len()built-in function then reported
-the number of items in that tuple, which is one.
-
-3. The name of the function to use is random.randint() and the Pythonic solution is
-store the numbers in a set. Objects stored in sets are unigue.
-
-import random
-lotto = set) # Create an empty set.
-while len(lotto) < 6:
-
-num = random.randint(1, 50)
-lotto.add(num)  # Add new number to set.
-
-print("Lottery numbers =", lotto)
-
-4. There are several solutions, here's one:
-
-machines = {'user100" 'yogi',
-'userl": 'booboo’,
-'user?" rupert’,
-'user3" 'teddy’,
-'user4’; ‘care’,
-‘users’ 'winnie',
-'user6”. 'sooty’,
-'user?" 'padders’,
-'user8" 'polar’,
-'user9" ‘grizzly’,
-'userl0" 'baloo’,
-‘user’: ‘bungle’,
-‘user? fozzie',
-'user13" 'huggy’,
-'userl4': 'barnaby,
-'userls” ‘hair’,
-'userle' 'greppy']
-
-a) userl4 no longer has a machine assigned.
-machines['user14’] = None
-
-b) The name of user15's machine is changed to 'cinnamon'.
-machines['user1s'] = ‘cinnamon’
-
-c) userl6 is leaving the company, and a new user, userl/, will be assigned his
-machine
-
-machines['userl7'] = machines['userl&']
-
-del machines['user16']
-
-d) user4, user5, and user6 are all leaving at exactly the same time,
-but their machine names are to be stored in a list called unallocated.
-unallocated = []
-for user in (‘'user4', 'users', 'userg'):
-unallocated += [machines.pop(user)]
-
-e) user8 gets another machine called 'kodiak' in addition to the one they
-already have.
-machines['user8'] = [machines['user8, '‘kodiak']
-
-f) Print a list of all the users, with their machines, in any order.
-
-
-for kv in machines.items():
-print(kv)
-
-g) Print a list of unallocated machines, sorted alphabetically.
-print ("Unallocated machines: ", sorted(unallocated))
-
-5. These are our results; yours will be different because you will be running on
-different hardware.
-
-Brute_force : 1.217 seconds
-Index : 0.265 seconds
-In : 0.234 seconds
-Dictionary : 0.031 seconds
-
-Several methods offer an improved access time. Remember though that using a
-dictionary requires a preamble overhead which may only be worth the effort with
-many searches. The figures are also data-dependant; longer search keys will
-influence performance.
-
-The code is as follows:
-
-fru ER Ht RR SH RR RH RRR RRR RR it RR Ra
-# TODO: USER FUNCTIONS
-# Each function should return the line number
-def brute_force():
-for pos in range(0, len(words)):
-if words[pos] == "Zulu":
-break
-
-# return the line number
-return pos + 1
-
-Here is an alternative implementation of brute_force, using enumerate:
-
-def brute_force2():
-for pos, word in enumerate(words):
-if word == "Zulu":
-break
-
-# return the line number
-return pos + |
-
-The timings are the same as using range, but it is more Pythonic.
-
-def index():
-return words.index('Zulu') +1
-
-def dictionary():
-return words_dict['Zulu'] + 1
-
-# Create a dictionary from the words list
-i=0
-start_timer()
-
-# TODO: Create a dictionary called words_dict
-for key in words:
-
-words_dict[key] =i
-i+=1
-
-foriin range(0, LOOP_COUNT):
-line = dictionary()
-
-end_timer('Dictionary')
-
-print(' Dictionary line number: line)
-line =0
-
-If time allows...
-
-Question 6
-
-from math import pi, tan, cos
-import matplotlib.pyplot as pyplot
-
-g=98I # Acceleration due to gravity m/s squared.
-vO = 44 # The initial velocity m/s.
-theta = 80 * pif180 # The elevation angle in radians.
-x=05 # The horizontal distance travelled.
-yO =1 # The height of the barrel (m).
-# Initial values for the graphic.
-y=y0
-x=00
-x_axis = [|
-y_axis = [|
-while y = 0:
-x=x+0.1
-
-y = (yO + x*tan(theta)
--(g*x*2))/(2* ((vO * cos(theta))**2))
-
-print('x = 1ffm, y= {Ifim'format(x, y))
-x_axis.append(x)
-y_axisappendl(y)
-
-# Graph.
-pyplotylabel('Height m')
-pyplot.xlabel('Distance m')
-
-# Optional realism.
-pyplotylim(-1, max(max(x_axis), max(y_axis)))
-
-pyplot.plot(x_axis, y_axis)
-pyplot.show()
-
-Question 7
-
-import time
-import random
-
-share_prices = {'Global Motors" 50,
-'Big Blue Inc." 50,
-'Gates Software": 50,
-‘Banana Computers: 50
-
-}
-# Update stock prices with random price changes.
-
-while True:
-for key, sp in share_prices.items():
-share_prices[key] = max(1.0, sp
-* (1+ ((random.random() - 0.5)
-/0.5)* 0.09)
-print("(:<18s} ${:05.2f}" format(key, share_prices[key]))
-
-print()
-time.sleep(2)
-
-32
-QA Python 3 Programming | QAPYTH3 v2.4
