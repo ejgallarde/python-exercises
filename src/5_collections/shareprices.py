@@ -20,7 +20,7 @@ share_prices = {'Global Motors': 50,
 while True:
     # We use the items() method to get a view object of the key-value pairs in the dictionary
     for share, price in share_prices.items():
-        price = max(1.0, price * (1 + ((random.random() - 0.5)/0.5) * 0.05))
+        price = max(1.0, price * (1 + ((random.random() - 0.5) / 0.5) * 0.05))
         share_prices[share] = price
         print("{:<18s}${:05.2f}".format(share, share_prices[share]))
         print()
