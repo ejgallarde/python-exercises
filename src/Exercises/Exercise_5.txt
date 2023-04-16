@@ -165,12 +165,11 @@ Here is a skeleton, as in shareprices.py:
 import time
 import random
 
-share_prices = {'Global Motors"; 50,
-'Big Blue Inc." 50,
-‘Gates Software": 50,
-'Banana Computers": 50
-
-}
+share_prices = {'Global Motors': 50,
+                'Big Blue Inc.': 50,
+                'Gates Software': 50,
+                'Banana Computers': 50
+                }
 
 # Update stock prices with random price changes
 
