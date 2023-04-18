@@ -14,12 +14,11 @@ the necessary file handling code - you fill in the gaps at the TODO (a) comments
 This script is also used for the second exercise (below), so ignore the TODO(b)
 comments for the time being.
 
-Blank lines should be ignored.
-The following formatting is to be done:
-
-1. Remove all new-lines, tabs and spaces
-2. Convert to uppercase
-3. Insert a space before the final digit and 2 letters
+1. Blank lines should be ignored.
+2. The following formatting is to be done:
+    Remove all new-lines, tabs and spaces
+    Convert to uppercase
+    Insert a space before the final digit and 2 letters
 4. Print out all the reformatted postcodes
 
 Hints:
@@ -86,28 +85,6 @@ which country it belongs to, or an error message if it is not there.
 
 
 Solutions
-
-import re
-infile = open('postcodes.txt’, 'r')
-
-valid=0
-invalid =0
-
-for postcode in infile:
-# Ignore empty lines.
-if postcode.isspace(): continue
-
-# (a): Remove newlines, tabs and spaces.
-postcode = re.sub('[\\n]', *, postcode)
-
-# (a): Convert to uppercase.
-postcode = postcode.upper()
-
-# (a): Insert a space before the final digit and 2 letters.
-postcode = re.sub('([0-9][A-Z]{21)$', r' \I', postcode)
-
-# Print the reformatted postcode.
-print(postcode)
 
 # (b) Validate the postcode, returning a match object.
 m = re.search(r'A[A-Z){1,2}[0-9]{1,2}[A-Z]? [0-9][A-Z]{2}$,
