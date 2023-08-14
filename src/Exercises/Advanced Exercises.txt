@@ -1,0 +1,53 @@
+## Problem 1
+Write a Python function that will count from 1 to an integer `n` (inclusive). For each count, print the counter value and a message separated by a single space. If the counter is even, the message should be `fizz`, `fuzz` if divisible by 3 and `foo` (only) if divisible by 6.
+
+## Problem 2
+Write a function `overlap_interval` that accepts parameters `start1`, `end1`, `start2` and `end2` corresponding to the endpoints of two numeric intervals. It should print the endpoints of their overlaps or print the message `No overlap!` if they don't overlap.
+
+## Problem 3
+Write a function that returns the cosine of an input (in radians) using [Maclaurin's approximation](https://en.wikibooks.org/wiki/Trigonometry/Power_Series_for_Cosine_and_Sine). It should use a `while` loop to compute terms of the summation until the last term is smaller than $10^{-15}$.
+
+## Problem 4
+The greatest common divisor (GCD) of $a$ and $b$ is the largest number that divides both of them with no remainder.
+
+One way to find the GCD of two numbers is based on the observation that if $r$ is the remainder when $a$ is divided by $b$, then $gcd(a, b) = gcd(b, r)$. As a base case, we can use $gcd(a, 0) = a$.
+
+Write a function called `gcd` that takes parameters `a` and `b` and returns their greatest common divisor.
+
+## Problem 5
+Write a function `biased_sum` that returns the sum of positive integers passed to it but numbers that are multiples of the `bias` are doubled before being added. By default, `bias` is 2. Return `None` if there are no numbers passed to it. Ignore arguments that are not positive integers.
+
+## Problem 6
+Write a function `last_in_sequence` that accepts a string of digits, which can have a repeating sequence of 0 to 9 in it but may have intervening digits between them. The function should return the last digit in the sequence found in the string. It should return `None` if there is no such sequence in the string.
+
+Examples:
+* **0**9**12**251**3**2**4**21 $\rightarrow$ 4
+* 1**0**9**12**251**3**2**4**21 $\rightarrow$ 4
+* **012345678901234** $\rightarrow$ 4
+* 1912251324 $\rightarrow$ `None`
+
+## Problem 7
+Write a function `check_password` that returns `True` if the input password satisfies the following criteria:
+
+* at least 8 characters in length
+* contains at least one lowercase letter
+* contains at least one uppercase letter
+* contains at least one number
+
+It should return `False` if at least one of the criteria is not satisfied.
+
+## Problem 9
+Create a function `print_patient_info` that accepts `name`, `age`, `sex`, `height`, `weight`, `icd_code` and `icd_desc` then prints them horizontally, in a columnar manner. It should be preceded by a line of headers centered in its column. Separate each column by a space. The details of the different columns are as follows:
+
+| Variable name | Header          | Column width | Alignment | Formatting       |
+|---------------|-----------------|--------------|-----------|------------------|
+| `name`        | Name            | 20           | left      |                  |
+| `age`         | Age             | 3            | right     |                  |
+| `sex`         | Sex             | 3            | center    |                  |
+| `height`      | Height          | 6            | right     | 2 decimal places |
+| `weight`      | Weight          | 6            | right     | 2 decimal places |
+| `icd_code`    | ICD Code        | 10           | center    |                  |
+| `icd_desc`    | ICD Description | 50           | left      |                  |
+
+## Problem 10
+Write a function `create_grid` that takes in the number of squares on a side and the number of stars on a side of a square then returns the grid of squares as a string. Separate each line by the newline (`\n`) character.
